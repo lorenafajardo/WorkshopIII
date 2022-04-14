@@ -26,9 +26,10 @@ public class Main {
 				break;
 
 			case 2:
-
+				operations.playlistCreate();
 				break;
 			}
+			
 		} while (option != 5);
 
 	}

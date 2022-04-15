@@ -1,15 +1,17 @@
 package playlist;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Comparator;
 
 public class Operations {
 
 	Scanner sc = new Scanner(System.in);
 	static Library library1 = new Library();
 	static List<Song> library = library1.addSong();
+
 	public void showLibrary() {
 
 		for (int i = 0; i < library.size(); i++) {
@@ -43,8 +45,8 @@ public class Operations {
 		}
 		return playList;
 	}
-	
-		public void filter() {
+
+	public void filter() {
 
 		int filterOption = sc.nextInt();
 		sc.nextLine();
@@ -111,5 +113,5 @@ public class Operations {
 			System.out.println("Opción invalida");
 		}
 	}
-    }
+
 }

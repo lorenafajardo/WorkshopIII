@@ -87,6 +87,16 @@ public class Operations {
 			}
 
 		} else if (filterOption == 2) {
+			
+			System.out.println("Ingrese el año que sea filtrar");
+			int date = sc.nextInt();
+			
+			for (int k = 0; k < library.size(); k++) {
+
+				if (library.get(k).getDate().getYear()==date) {
+					System.out.println(library.get(k));
+				}
+			}
 
 		} else {
 			System.out.println("Opción incorrecta");

@@ -1,4 +1,4 @@
-package playlist.app;
+package playlist.controller;
 
 /**
  * @author Daniela Y Lorena 

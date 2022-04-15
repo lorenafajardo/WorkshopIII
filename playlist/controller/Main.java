@@ -1,10 +1,8 @@
 package playlist.controller;
 
-import java.time.LocalDate;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 import playlist.Menu;
 import playlist.Operations;
@@ -47,7 +45,7 @@ public class Main {
 			}
 
 		} while (option != 5);
-		hoy.getYear();
+		
 	
 	}
 

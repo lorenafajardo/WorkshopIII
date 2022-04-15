@@ -34,6 +34,16 @@ public class Main {
 			case 2:
 				operations.playlistCreate();
 				break;
+			
+			case 3:
+				menu.filterShow();
+				operations.filter();
+				break;
+			
+			case 4:
+				menu.orderShow();
+				operations.order();
+				break;
 			}
 
 		} while (option != 5);

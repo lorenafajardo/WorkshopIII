@@ -10,7 +10,6 @@ public class Operations {
 	Scanner sc = new Scanner(System.in);
 	static Library library1 = new Library();
 	static List<Song> library = library1.addSong();
-	
 	public void showLibrary() {
 
 		for (int i = 0; i < library.size(); i++) {
@@ -20,8 +19,8 @@ public class Operations {
 	}
 
 	public List<Song> playlistCreate() {
-		
-      	List<Song> playList = new ArrayList<Song>();
+
+		List<Song> playList = new ArrayList<Song>();
 		System.out.println("Cuantas canciones desea ingresar: ");
 		int songsNumber = sc.nextInt();
 		sc.nextLine();

@@ -1,5 +1,16 @@
+
+/**
+ * @author LORENA FAJARDO y DANIELA MONTANO 
+ * 
+ * Clase: Operations. En está clase se encuetran los métodos a implementar en el main,
+ * segun las diferentes opciones del menú
+ */
+
 package playlist;
 
+/**
+ * Importación de librerias 
+ */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -7,11 +18,17 @@ import java.util.Scanner;
 import java.util.Comparator;
 
 public class Operations {
-
+	
+	/**
+	 * Instacia de clases
+	 */
 	Scanner sc = new Scanner(System.in);
 	static Library library1 = new Library();
 	static List<Song> library = library1.addSong();
-
+	
+	/**
+	 * Método para mostrar libreria de canciones, mediante ciclo For
+	 */
 	public void showLibrary() {
 
 		for (int i = 0; i < library.size(); i++) {
@@ -19,7 +36,10 @@ public class Operations {
 		}
 
 	}
-
+	
+	/**
+	 * Método para crear playlist, mediante ciclo For
+	 */
 	public List<Song> playlistCreate() {
 
 		List<Song> playList = new ArrayList<Song>();
@@ -45,6 +65,10 @@ public class Operations {
 		}
 		return playList;
 	}
+	
+	/**
+	 * Método para filtrar libreria de canciones, con opción para filtrar por genero o por año, mediante ciclo for
+	 */
 
 	public void filter() {
 
@@ -69,6 +93,10 @@ public class Operations {
 		}
 	}
 
+	/**
+	 * Método para ordenar libreria de canciones, con opción de ordenar por fecha y por duracion de las canciones, utilizado mediante la
+	 * sobreescritura del método compare.
+	 */
 	public void order() {
 
 		int optionOrder = sc.nextInt();

@@ -18,11 +18,11 @@ public class Main {
 		do {
 			menu.mostrar();
 			option = sc.nextInt();
-
+			
 			switch (option) {
-
+           
 			case 1:
-				operations.addSong();
+				operations.showLibrary();
 				break;
 
 			case 2:
@@ -31,7 +31,6 @@ public class Main {
 			}
 			
 		} while (option != 5);
-
 	}
 
 }

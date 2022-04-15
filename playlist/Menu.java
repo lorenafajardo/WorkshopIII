@@ -4,7 +4,6 @@ public class Menu {
 
 		public void mostrar() {
 		System.out.println("-------------WELCOME---------------");
-		System.out.println("Ingrese la opcion deseada");
 		System.out.println("1.Mostrar biblioteca");
 		System.out.println("2.Crear Playlist");
 		System.out.println("3.Filtrar canciones");

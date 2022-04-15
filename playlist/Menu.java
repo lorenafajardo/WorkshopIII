@@ -1,5 +1,10 @@
 package playlist;
 
+/**
+ * 
+ * @author Daniela Y Lorena Se crea la clase Menu donde se muestra nuetro menu
+ *         de opciones
+ */
 public class Menu {
 
 	public void mostrar() {
@@ -23,6 +28,5 @@ public class Menu {
 		System.out.println("2. Ordenar canciones por duración");
 	}
 }
-
 
 
